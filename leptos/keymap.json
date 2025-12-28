@@ -28,6 +28,7 @@
     "bindings": {
       "alt-'": "editor::ToggleComments",
       "alt-delete": "pane::CloseOtherItems",
+      "alt-q": "pane::CloseOtherItems",
       "alt-c": "editor::DuplicateLineDown",
       "ctrl-w": "editor::SelectLargerSyntaxNode",
       "ctrl-q": "editor::SelectSmallerSyntaxNode",
