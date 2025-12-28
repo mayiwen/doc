@@ -15,13 +15,13 @@
       "alt-f": "pane::DeploySearch",
       "alt-d": "outline_panel::ToggleFocus"
       // "shift shift": "file_finder::Toggle"
-    }
+    },
   },
   {
     "context": "Editor && vim_mode == insert && !menu",
     "bindings": {
       // "j k": "vim::SwitchToNormalMode"
-    }
+    },
   },
   {
     "context": "Editor",
@@ -32,11 +32,9 @@
       "alt-c": "editor::DuplicateLineDown",
       "ctrl-w": "editor::SelectLargerSyntaxNode",
       "ctrl-q": "editor::SelectSmallerSyntaxNode",
-      "alt-v": "editor::DeleteLine"
-    }
+      "alt-v": "editor::DeleteLine",
+      "alt-e": "editor::MoveLineUp",
+      "alt-r": "editor::MoveLineDown",
+    },
   },
-  {
-    "context": "Editor",
-    "bindings": {}
-  }
 ]
