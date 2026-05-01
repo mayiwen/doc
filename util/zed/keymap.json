@@ -12,9 +12,13 @@
       "alt-a": "project_panel::ToggleFocus",
       "alt-s": "git_panel::ToggleFocus",
       "alt-space": "workspace::ToggleLeftDock",
-      "alt-f": "pane::DeploySearch",
-      "alt-d": "outline_panel::ToggleFocus"
-      // "shift shift": "file_finder::Toggle"
+      "alt-g": "outline_panel::ToggleFocus",
+
+      "alt-f": "editor::ViewBookmarks",
+      // 鼠标前侧键 → 第一个标签
+      "alt-j": ["pane::ActivateItem", 0],
+      // 鼠标后侧键 → 第二个标签g
+      "alt-k": ["pane::ActivateItem", 1],
     },
   },
   {
@@ -35,6 +39,13 @@
       "alt-v": "editor::DeleteLine",
       "alt-e": "editor::MoveLineUp",
       "alt-r": "editor::MoveLineDown",
+      "alt-d": "editor::ToggleBookmark",
+      // 一键 添加/删除 书签
+      "alt-x": [
+        "workspace::SendKeystrokes",
+        "ctrl-c ctrl-p right right right right right right right right right right ctrl-v enter",
+      ],
+      "alt-z": "editor::CopyFileLocation",
     },
   },
 ]
