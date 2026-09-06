@@ -1,0 +1,27 @@
+{
+  "title": "Zed: Option仅快捷键修饰键",
+  "rules": [
+    {
+      "description": "仅Zed内禁用option字符，不影响输入法切换",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "any": "key",
+            "modifiers": {
+              "mandatory": ["option"],
+              "optional": ["shift","control","command"]
+            }
+          },
+          "to": null,
+          "conditions": [
+            {
+              "type": "front_application_if",
+              "bundle_identifiers": ["^dev.zed.Zed$"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

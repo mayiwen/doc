@@ -1,0 +1,21 @@
+{
+  "title": "全局：Option仅作为快捷键修饰键，禁止输出特殊字符",
+  "rules": [
+    {
+      "description": "全局禁用 option+字母打出 ç/å/特殊符号，Alt纯修饰键",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "any": "key",
+            "modifiers": {
+              "mandatory": ["option"],
+              "optional": ["shift","control","command"]
+            }
+          },
+          "to": null
+        }
+      ]
+    }
+  ]
+}
